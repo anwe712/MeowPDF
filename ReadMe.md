@@ -21,6 +21,7 @@
 ## 🛠 Setup Instructions
 
 ### 🔗 Model Download (Required)
+
 This project uses TinyLLaMA (600MB), which is too large for GitHub.
 
 Please download the model from:
@@ -29,14 +30,12 @@ Please download the model from:
 Place it in the project root as:
 `tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf`
 
-
 ### 1. Clone this repo
 
 ```bash
 git clone https://github.com/yourname/meow-pdf
 cd meow-pdf
 ```
-
 
 ### 2. Install Python dependencies
 
@@ -60,32 +59,11 @@ You need a .gguf model file, like:
 
 Place the model file in the project directory.
 
-Rename it if needed:
-
-bash
-Copy
-Edit
-mv TinyLlama-1.1B-Chat.Q4_K_M.gguf model.gguf
-4. Run the app
-For CLI mode:
-
-bash
-Copy
-Edit
-python main.py
-Or to run the web interface (Flask):
-
-bash
-Copy
-Edit
-flask run
 Open your browser and go to:
 📍 http://localhost:5000
 
 📂 Project Structure
-bash
-Copy
-Edit
+
 meow-pdf/
 ├── static/                   # CSS and static files
 ├── templates/                # HTML templates
@@ -96,10 +74,7 @@ meow-pdf/
 ├── main.py                   # CLI runner (optional)
 ├── requirements.txt
 └── README.md
-💡 Prompt Used for Answer Generation
-text
-Copy
-Edit
+
 You are a knowledgeable assistant. Answer the question clearly and factually.
 
 Question: What is Newton's First Law of Motion?
@@ -114,18 +89,6 @@ A: Depends on your system's RAM and the model used. For TinyLLaMA, around 50–1
 Q: Is this private/offline?
 A: 100% local. No internet or OpenAI API is needed.
 
-🐱 Created with love by [YourName]
+🐱 Created with love by Anwe
 "Because even AI deserves to meow through your PDFs."
 🐾 Built with Python, PDFs, and a tiny bit of cat magic.
-
-markdown
-Copy
-Edit
-
-Let me know if you want:
-
-- `requirements.txt`
-- `app.py` template
-- Deployment notes (Docker/Render etc.)
-
-I can bundle that too 🐾✨
