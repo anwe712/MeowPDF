@@ -1,0 +1,104 @@
+/* Import some cute fonts if you like */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-vector/watercolor-international-cat-day-background_23-2149506124.jpg?t=st=1743922676~exp=1743926276~hmac=2b81299877ec2c5ad995ff5cd7d78b3efa4795f3513097c15cbb75ad6d8ce4d4&w=996') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glassmorphic navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Container with glass effect */
+.container {
+    margin-top: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-top: 20px;
+    color: rgb(245, 59, 96);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1em;
+    background: #ff8fab;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #f26a8d;
+}
+
+/* Centering the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Hide the ugly default file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Custom file input label */
+.custom-file-upload {
+    background-color: #ffffff33;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: background 0.3s ease;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    font-weight: 500;
+}
+
+.custom-file-upload:hover {
+    background-color: #ffffff55;
+}
